@@ -1,0 +1,14 @@
+.m-search-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 290px;
+    height: 42px;
+    background-color: rgba(0,0,0,.06);
+    border: none;
+    border-radius: 30px;
+    padding-left: 20px;
+}   
+.input-search:focus{
+    outline: none;
+}

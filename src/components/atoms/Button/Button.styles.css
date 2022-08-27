@@ -1,0 +1,39 @@
+/* default */
+.atom-button{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+/* end default */
+
+.btn-style {
+  margin-bottom: 2px;
+}
+
+.btn-style:hover {
+  background: #e7eaf3!important;
+}
+
+.btn-style:hover .text-style {
+  color : Black !important;
+}
+
+.atom-button.active{
+  background: #e8f2ff !important;
+}
+
+.atom-button.only-icon {
+  text-align: center;
+  justify-content: center;
+}
+
+.atom-button.only-icon .image-style {
+  margin: 0!important;
+}
+
+.atom-button.btn-search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
