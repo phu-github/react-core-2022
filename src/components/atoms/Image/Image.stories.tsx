@@ -16,10 +16,11 @@ const Template: ComponentStory<typeof Image> = (args) => <Image {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  srcImg: Images.PH2Logo || 'https://picsum.photos/200',
-  width: '200px',
-  height: '200px',
-  margin: '0px',
-  borderRadius: '0px',
-  onClick: action('on-click')
+    variant: "img-default",
+    srcImg: Images.PH2Logo || 'https://picsum.photos/200',
+    width: '200px',
+    height: '200px',
+    margin: '0px',
+    borderRadius: '0px',
+    onClick: action('on-click')
 };

@@ -17,14 +17,7 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
 
 export const ButtonIcon = Template.bind({});
 ButtonIcon.args = {
-  variant: 'only-icon',
-  width: '48px',
-  height: '48px',
-  padding: '16px 9px',
-  margin: '0',
-  backgroundColor: '#e7eaf3',
-  border: 'none',
-  borderRadius: 'none',
+  variant: 'btn-icon',
   linkIcon: Images.SearchIcon,
   title: "",
   onClick: action('on-click'),
@@ -32,30 +25,42 @@ ButtonIcon.args = {
 
 export const ButtonIconText = Template.bind({});
 ButtonIconText.args = {
-  variant: 'btn-style',
-  width: '232px',
-  height: '38px',
-  padding: '0px 24px 0px 45px',
-  margin:'0 0',
-  backgroundColor: '#fff',
-  border: '1px solid #e0f3ff',
-  borderRadius: '4px',
-  linkIcon: Images.DashboardIcon,
-  title: "Dashboard AI-TOEIC",
-  onClick: action('on-click'),
+    variant: 'btn-icon-text',
+    linkIcon: Images.DashboardIcon,
+    title: "Dashboard AI-TOEIC",
+    onClick: action('on-click'),
+    imageWidth: '22px',
+    imageHeight: '22px'
 };
 
 export const ButtonSearch = Template.bind({});
 ButtonSearch.args = {
   variant: 'btn-search',
-  width: '42px',
-  height: '42px',
-  padding: '0 0',
-  margin: '0',
-  backgroundColor: 'rgba(0,0,0,.06)',
-  border: '1px solid #e9ecef',
-  borderRadius: '50%',
   linkIcon: Images.SearchIcon,
   title: "",
   onClick: action('on-click'),
+  imageWidth: '22px',
+  imageHeight: '22px'
+};
+
+export const MailBox = Template.bind({});
+MailBox.args = {
+  variant: 'btn-mail',
+  linkIcon: Images.MailIcon,
+  title: "0",
+  onClick: action('on-click'),
+  imageWidth: '24px',
+  imageHeight: '24px',
+  textVariant: 'txt-mail'
+};
+
+export const NotificationBox = Template.bind({});
+NotificationBox.args = {
+  variant: 'btn-notify',
+  linkIcon: Images.MessageIcon,
+  title: "0",
+  onClick: action('on-click'),
+  imageWidth: '24px',
+  imageHeight: '24px',
+  textVariant: 'txt-notify',
 };

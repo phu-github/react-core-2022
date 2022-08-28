@@ -12,14 +12,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
         <Input variant='input-search' backgroundColor='transparent' border='none' />
         <Button 
             variant = "btn-search" 
-            width = {42} 
-            height = {42} 
-            padding = {0}
-            margin = {0}
-            backgroundColor = 'rgba(0,0,0,.06)' 
             linkIcon = {mLinkIcon} 
-            border = 'none'
-            borderRadius='30px'
         />
     </div>
   );

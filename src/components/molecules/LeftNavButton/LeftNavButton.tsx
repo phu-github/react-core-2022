@@ -39,13 +39,10 @@
 // };
 
 import React, { useState } from 'react';
-import {LeftNavButtonProps} from './LeftNavButton.props';
+import { LeftNavButtonProps } from './LeftNavButton.props';
 import './LeftNavButton.styles.css';
-import {Button} from "../../atoms/Button";
+import { Button } from "../../atoms/Button";
 
-interface LeftNavButton {
-  id?: number; name?: string; linkIcon?: string; activeObject?: string;
-}
 
 export const LeftNavButton: React.FC<LeftNavButtonProps> = ({
     leftNavBtnArr=[],
@@ -59,10 +56,11 @@ export const LeftNavButton: React.FC<LeftNavButtonProps> = ({
   }
   console.log("active=", active);
   return (
-      <div className="button-section-group fixed">
+      <div className="m-navigation fixed">
         {
 			leftNavBtnArr?.map((leftNavBtn: any, index) =>  
 				<Button
+                    variant='btn-icon-text'
 					key={index} 
 					isActive={active === leftNavBtn} 
 					onClick={() =>handleNavLeftBtn(leftNavBtn)} 

@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Text } from '.';
 
 export default {
-  title: 'Text',
+  title: 'Atoms/Text',
   component: Text,
   argTypes: {
     color: { control: 'color' },
@@ -14,26 +14,29 @@ const Template: ComponentStory<typeof Text> = (args) => <Text {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  children: 'Primary Text',
-  fontSize: 14,
-  fontWeight: 300,
-  color: 'black',
+    varient: '',
+    children: 'Primary Text',
+    fontSize: 14,
+    fontWeight: 300,
+    color: 'black',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  children: 'Secondary Text',
-  fontSize: 12,
-  fontWeight: 300,
-  color: 'gray',
-  margin: "0"
+    varient: '',
+    children: 'Secondary Text',
+    fontSize: 12,
+    fontWeight: 300,
+    color: 'gray',
+    margin: '0'
 };
 
 export const Tertiary = Template.bind({});
 Tertiary.args = {
-  children: 'Tertiary Text',
-  fontSize: 10,
-  fontWeight: 300,
-  color: 'black',
-  margin: "0"
+    varient: '',
+    children: 'Tertiary Text',
+    fontSize: 10,
+    fontWeight: 300,
+    color: 'black',
+    margin: '0'
 };
